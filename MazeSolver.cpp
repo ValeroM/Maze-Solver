@@ -130,10 +130,10 @@ bool MazeSolver::solveMaze() {
 	current_pos.column = backtrack_stack_.top().column;
 	while (!backtrack_stack_.empty()) {
 		if (maze_[current_pos.row][current_pos.column] == '$') {
-      std::cout << "Found the exit!!!\n";
+      			std::cout << "Found the exit!!!\n";
 			return true;
 		}
-		else if (extendPath(current_pos))	{
+		else if (extendPath(current_pos)) {
 			solution_[current_pos.row][current_pos.column] = '>';
 			current_pos = backtrack_stack_.top(); // the top should be east if east was extensible
 		}
