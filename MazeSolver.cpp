@@ -53,7 +53,7 @@ bool MazeSolver::mazeIsReady() {
   if (maze_rows_ > 0 && maze_columns_ > 0) {
     maze_ready = true;
     return true;
-	}
+  }
   maze_ready = false;
   return false;
 }
