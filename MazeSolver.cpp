@@ -54,7 +54,7 @@ bool MazeSolver::mazeIsReady() {
     maze_ready = true;
     return true;
 	}
-	maze_ready = false;
+  maze_ready = false;
   return false;
 }
 
